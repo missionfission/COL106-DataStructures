@@ -1,0 +1,9 @@
+function CreateTest(x,y)
+    dlmwrite("x.txt",x," ");
+    dlmwrite("y.txt",y," ");
+    dlmwrite("x_invert.txt",PerformInvert(x)," ");
+    dlmwrite("and.txt",PerformAnd(x,y)," ");
+    dlmwrite("or.txt",PerformOr(x,y)," ");
+    dlmwrite("xor.txt",PerformXor(x,y)," ");
+    dlmwrite("SetPixel.txt",SetPixel(x,y)," ");
+    dlmwrite("BlackPixels.txt",BlackPixels(x)," ");
